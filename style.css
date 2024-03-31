@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: bisque;
+  padding: 100px 150px;
+}
+
+.header {
+  background-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0.7)), url(./img/fundo.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 40vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 100px;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.header-txt {
+  height: 20vh;
+  width: 800px;
+  margin-right: 150px;
+  padding: 10px;
+}
+
+.header-txt p {
+  font-size: 16px;
+  border-left: 5px solid rgb(255, 255, 255);
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.conteudo-pai {
+  background-color: black;
+  height: 60vh;
+  width: 100%;
+  border-top: 1px solid rgb(20, 23, 68);
+  display: flex;
+}
+
+.conteudo {
+  background-color: red;
+  border: 1px solid red;
+  width: 30%;
+  height: 400px;
+  margin: auto 20px;
+}
+
+.h1 {
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.main {
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+}
+
+.main-2 {
+  border-left: 3px solid black;
+  padding: 20px;
+  margin: 10px;
+  width: 20%;
+  font-size: 18px;
+}
+
+.historia {
+  background-color: rgb(29, 29, 29);
+  padding: 50px;
+  display: flex;
+}
+.historia .historia-text {
+  padding: 20px;
+  margin-right: 20px;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+}
+.historia .historia-img img {
+  border-radius: 300px;
+}
+
+.section-graficos {
+  background-color: rgb(29, 29, 29);
+  padding: 30px;
+  align-items: center;
+  text-align: center;
+}
+
+.graficos {
+  background-color: rgb(29, 29, 29);
+  padding: 50px;
+  color: aliceblue;
+}
+
+.graficos-text {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.graficos-text .type-graficos {
+  width: 40%;
+  height: 50vh;
+  padding: 30px;
+  margin: 10px;
+  align-items: center;
+  text-align: center;
+  border: 1px solid black;
+  background-color: bisque;
+}
+.graficos-text .type-graficos .icon {
+  width: 100px;
+  margin: 30px;
+}
+
+.negociacao {
+  background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.7)), url(./img/fundo.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.negociacao-um {
+  width: 40%;
+  font-size: 18px;
+  margin-left: 100px;
+  color: white;
+}
+
+.negociacao-text-um {
+  display: flex;
+  margin-left: 200px;
+  width: 30%;
+  flex-direction: column;
+}
+.negociacao-text-um .negociacao-text {
+  margin: 10px;
+  background-color: bisque;
+  border: 1px solid black;
+  border-radius: 25px;
+  height: 13vh;
+  padding: 10px;
+  text-align: center;
+}
+
+.conatiner-bolsa {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.bolsas {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.bolsas .bolsas-text {
+  border: 1px solid green;
+  margin: 10px;
+  width: 30%;
+  height: 45vh;
+  padding: 30px;
+}
+
+.bolsa-container {
+  width: 60%;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}/*# sourceMappingURL=style.css.map */
