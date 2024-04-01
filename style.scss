@@ -26,35 +26,36 @@ body {
   margin-right: 100px;
   justify-content: center;
   font-size: 30px;
+
+  .header-txt {
+    height: 20vh;
+    width: 800px;
+    margin-right: 150px;
+    padding: 10px;
+  }
+
+  .header-txt p {
+    font-size: 16px;
+    border-left: 5px solid rgb(255, 255, 255);
+    padding: 10px;
+    margin-top: 30px;
+  }
 }
 
-.header-txt {
-  height: 20vh;
-  width: 800px;
-  margin-right: 150px;
-  padding: 10px;
-}
-
-.header-txt p {
-  font-size: 16px;
-  border-left: 5px solid rgb(255, 255, 255);
-  padding: 10px;
-  margin-top: 30px;
-}
 .conteudo-pai {
   background-color: black;
   height: 60vh;
   width: 100%;
   border-top: 1px solid rgb(20, 23, 68);
   display: flex;
-}
 
-.conteudo {
-  background-color: red;
-  border: 1px solid red;
-  width: 30%;
-  height: 400px;
-  margin: auto 20px;
+  .conteudo {
+    background-color: red;
+    border: 1px solid red;
+    width: 30%;
+    height: 400px;
+    margin: auto 20px;
+  }
 }
 
 .h1 {
@@ -66,14 +67,14 @@ body {
   display: flex;
   margin: 10px;
   padding: 10px;
-}
 
-.main-2 {
-  border-left: 3px solid black;
-  padding: 20px;
-  margin: 10px;
-  width: 20%;
-  font-size: 18px;
+  .main-2 {
+    border-left: 3px solid black;
+    padding: 20px;
+    margin: 10px;
+    width: 20%;
+    font-size: 18px;
+  }
 }
 
 .historia {
@@ -87,44 +88,90 @@ body {
     font-size: 18px;
     color: rgb(255, 255, 255);
   }
-
-  .historia-img img {
-    border-radius: 300px;
-  }
 }
 
-.section-graficos {
-  background-color: rgb(29, 29, 29);
-  padding: 30px;
-  align-items: center;
-  text-align: center;
+.analisetec {
+  background-color: bisque;
+  padding: 20px;
 }
 
-.graficos {
-  background-color: rgb(29, 29, 29);
-  padding: 50px;
-  color: aliceblue;
-}
-.graficos-text {
+.grafico-container {
   display: flex;
-  align-items: center;
-  text-align: center;
   justify-content: center;
+  align-items: center;
+  gap: 100px 50px;
+  flex-wrap: wrap;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  background-color: bisque;
 
-  .type-graficos {
-    width: 40%;
-    height: 50vh;
-    padding: 30px;
-    margin: 10px;
-    align-items: center;
+  .grafico {
+    position: relative;
+    width: 350px;
+    height: 250px;
+    background: rgb(49, 54, 79);
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+    justify-content: center;
+    display: flex;
+  }
+
+  .grafico:hover {
+    height: 400px;
+    background: #000000;
+    transition: 0.5s;
+  }
+
+  .grafico-img {
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    border-radius: 12px;
+    top: 20px;
+    transition: 0.5s;
+  }
+
+  .grafico-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .grafico-text {
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    height: 35px;
+    overflow: hidden;
     text-align: center;
-    border: 1px solid black;
-    background-color: bisque;
+  }
+  .grafico:hover .grafico-text {
+    top: 50px;
+    height: 400px;
+  }
 
-    .icon {
-      width: 100px;
-      margin: 30px;
-    }
+  .grafico:hover .grafico-img {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+  }
+
+  .grafico-text h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    color: rgb(230, 230, 246);
+    margin-top: -10px;
+  }
+
+  .grafico-text p {
+    color: rgb(236, 237, 244);
+    padding: 0 20px;
+    margin: 10px 15px 5px 15px;
   }
 }
 
@@ -140,21 +187,21 @@ body {
   display: flex;
   align-items: center;
   padding: 20px;
-}
 
-.negociacao-um {
-  width: 40%;
-  font-size: 18px;
-  margin-left: 100px;
-  color: white;
-}
+  .negociacao-um {
+    width: 40%;
+    font-size: 18px;
+    margin-left: 100px;
+    color: white;
+  }
 
-.negociacao-text-um {
-  display: flex;
+  .negociacao-text-um {
+    display: flex;
 
-  margin-left: 200px;
-  width: 30%;
-  flex-direction: column;
+    margin-left: 200px;
+    width: 30%;
+    flex-direction: column;
+  }
 
   .negociacao-text {
     margin: 10px;
@@ -172,13 +219,13 @@ body {
   text-align: center;
   justify-content: center;
   padding: 30px;
-}
 
-.bolsas {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
+  .bolsas {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
 
   .bolsas-text {
     border: 1px solid green;
@@ -187,11 +234,11 @@ body {
     height: 45vh;
     padding: 30px;
   }
-}
 
-.bolsa-container {
-  width: 60%;
-  margin: auto;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  .bolsa-container {
+    width: 60%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 }

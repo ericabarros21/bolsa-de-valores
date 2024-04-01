@@ -22,15 +22,13 @@ body {
   justify-content: center;
   font-size: 30px;
 }
-
-.header-txt {
+.header .header-txt {
   height: 20vh;
   width: 800px;
   margin-right: 150px;
   padding: 10px;
 }
-
-.header-txt p {
+.header .header-txt p {
   font-size: 16px;
   border-left: 5px solid rgb(255, 255, 255);
   padding: 10px;
@@ -44,8 +42,7 @@ body {
   border-top: 1px solid rgb(20, 23, 68);
   display: flex;
 }
-
-.conteudo {
+.conteudo-pai .conteudo {
   background-color: red;
   border: 1px solid red;
   width: 30%;
@@ -63,8 +60,7 @@ body {
   margin: 10px;
   padding: 10px;
 }
-
-.main-2 {
+.main .main-2 {
   border-left: 3px solid black;
   padding: 20px;
   margin: 10px;
@@ -83,42 +79,83 @@ body {
   font-size: 18px;
   color: rgb(255, 255, 255);
 }
-.historia .historia-img img {
-  border-radius: 300px;
+
+.analisetec {
+  background-color: bisque;
+  padding: 20px;
 }
 
-.section-graficos {
-  background-color: rgb(29, 29, 29);
-  padding: 30px;
-  align-items: center;
-  text-align: center;
-}
-
-.graficos {
-  background-color: rgb(29, 29, 29);
-  padding: 50px;
-  color: aliceblue;
-}
-
-.graficos-text {
+.grafico-container {
   display: flex;
-  align-items: center;
-  text-align: center;
   justify-content: center;
-}
-.graficos-text .type-graficos {
-  width: 40%;
-  height: 50vh;
-  padding: 30px;
-  margin: 10px;
   align-items: center;
-  text-align: center;
-  border: 1px solid black;
+  gap: 100px 50px;
+  flex-wrap: wrap;
+  padding-top: 100px;
+  padding-bottom: 50px;
   background-color: bisque;
 }
-.graficos-text .type-graficos .icon {
-  width: 100px;
-  margin: 30px;
+.grafico-container .grafico {
+  position: relative;
+  width: 350px;
+  height: 250px;
+  background: rgb(49, 54, 79);
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+  justify-content: center;
+  display: flex;
+}
+.grafico-container .grafico:hover {
+  height: 400px;
+  background: #000000;
+  transition: 0.5s;
+}
+.grafico-container .grafico-img {
+  position: absolute;
+  width: 300px;
+  height: 150px;
+  border-radius: 12px;
+  top: 20px;
+  transition: 0.5s;
+}
+.grafico-container .grafico-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px;
+}
+.grafico-container .grafico-text {
+  position: absolute;
+  top: 200px;
+  width: 100%;
+  height: 35px;
+  overflow: hidden;
+  text-align: center;
+}
+.grafico-container .grafico:hover .grafico-text {
+  top: 50px;
+  height: 400px;
+}
+.grafico-container .grafico:hover .grafico-img {
+  top: -100px;
+  scale: 0.75;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+.grafico-container .grafico-text h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 3rem;
+  color: rgb(230, 230, 246);
+  margin-top: -10px;
+}
+.grafico-container .grafico-text p {
+  color: rgb(236, 237, 244);
+  padding: 0 20px;
+  margin: 10px 15px 5px 15px;
 }
 
 .negociacao {
@@ -129,21 +166,19 @@ body {
   align-items: center;
   padding: 20px;
 }
-
-.negociacao-um {
+.negociacao .negociacao-um {
   width: 40%;
   font-size: 18px;
   margin-left: 100px;
   color: white;
 }
-
-.negociacao-text-um {
+.negociacao .negociacao-text-um {
   display: flex;
   margin-left: 200px;
   width: 30%;
   flex-direction: column;
 }
-.negociacao-text-um .negociacao-text {
+.negociacao .negociacao-text {
   margin: 10px;
   background-color: bisque;
   border: 1px solid black;
@@ -159,22 +194,20 @@ body {
   justify-content: center;
   padding: 30px;
 }
-
-.bolsas {
+.conatiner-bolsa .bolsas {
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
 }
-.bolsas .bolsas-text {
+.conatiner-bolsa .bolsas-text {
   border: 1px solid green;
   margin: 10px;
   width: 30%;
   height: 45vh;
   padding: 30px;
 }
-
-.bolsa-container {
+.conatiner-bolsa .bolsa-container {
   width: 60%;
   margin: auto;
   margin-top: 40px;
