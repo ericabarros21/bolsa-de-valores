@@ -1,12 +1,16 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Sora", sans-serif;
 }
 
+
+
 body {
-  background-color: bisque;
+  background-color: rgb(255, 255, 255);
   padding: 100px 150px;
 }
+
 
 .header {
   background-image: linear-gradient(
@@ -18,7 +22,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 40vh;
+  height: 60vh;
   color: white;
   display: flex;
   flex-direction: column;
@@ -31,6 +35,7 @@ body {
     height: 20vh;
     width: 800px;
     margin-right: 150px;
+    margin-bottom: 100px;
     padding: 10px;
   }
 
@@ -40,45 +45,53 @@ body {
     padding: 10px;
     margin-top: 30px;
   }
-}
 
-.conteudo-pai {
-  background-color: black;
-  height: 60vh;
-  width: 100%;
-  border-top: 1px solid rgb(20, 23, 68);
-  display: flex;
+  .btn-1 {
+    background-color: rgb(28, 63, 158);
+  padding: 10px;
+  color: white;
+  border-radius: 7px;
+  border: none;
+  margin: 8px;
+  cursor: pointer;
+  margin-left: 15px;
 
-  .conteudo {
-    background-color: red;
-    border: 1px solid red;
-    width: 30%;
-    height: 400px;
-    margin: auto 20px;
+  &:hover{
+    background-color: rgb(37, 82, 206);
+  }
+
   }
 }
 
+
 .h1 {
-  padding: 10px;
-  margin-left: 20px;
+
+  background-color: rgb(184, 179, 179);
+  padding: 10px 0 10px 30px;
+
 }
+
 
 .main {
   display: flex;
-  margin: 10px;
   padding: 10px;
+  background-color: rgb(184, 179, 179);
 
   .main-2 {
-    border-left: 3px solid black;
+    border-left: 3px solid rgb(28, 63, 158);
     padding: 20px;
-    margin: 10px;
+    margin: 20px;
     width: 20%;
     font-size: 18px;
+  }
+
+  .main-2 h2{
+    margin-bottom: 40px;
   }
 }
 
 .historia {
-  background-color: rgb(29, 29, 29);
+  background-color: rgb(243, 237, 237);
   padding: 50px;
   display: flex;
 
@@ -86,13 +99,21 @@ body {
     padding: 20px;
     margin-right: 20px;
     font-size: 18px;
-    color: rgb(255, 255, 255);
+    color: black;
+    text-align: justify;
+  }
+  .historia-img img{
+    border-radius: 50px;
+    margin-top: 80px ;
+    width: 500px;
   }
 }
 
 .analisetec {
-  background-color: bisque;
+  background-color: rgb(243, 237, 237);
   padding: 20px;
+  text-align: justify;
+  margin: auto;
 }
 
 .grafico-container {
@@ -103,13 +124,13 @@ body {
   flex-wrap: wrap;
   padding-top: 100px;
   padding-bottom: 50px;
-  background-color: bisque;
+  background-color: rgb(243, 237, 237);
 
   .grafico {
     position: relative;
     width: 350px;
     height: 250px;
-    background: rgb(49, 54, 79);
+    background: rgb(184, 179, 179);
     box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
     transition: 0.5s;
     justify-content: center;
@@ -117,8 +138,8 @@ body {
   }
 
   .grafico:hover {
-    height: 400px;
-    background: #000000;
+    height: 500px;
+    background: rgb(37, 82, 206);
     transition: 0.5s;
   }
 
@@ -164,9 +185,12 @@ body {
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 3rem;
-    color: rgb(230, 230, 246);
+    color: black;
     margin-top: -10px;
+
+    
   }
+ 
 
   .grafico-text p {
     color: rgb(236, 237, 244);
@@ -186,31 +210,42 @@ body {
   background-size: cover;
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
+  height: 120vh;
 
   .negociacao-um {
-    width: 40%;
+    width: 30%;
     font-size: 18px;
     margin-left: 100px;
     color: white;
+    text-align: justify;
   }
 
   .negociacao-text-um {
     display: flex;
-
-    margin-left: 200px;
-    width: 30%;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 70%;
+    height: 90vh;
+ 
   }
 
   .negociacao-text {
     margin: 10px;
-    background-color: bisque;
+    background-color: rgb(184, 179, 179);
     border: 1px solid black;
     border-radius: 25px;
-    height: 13vh;
-    padding: 10px;
+    height: 15vh;
+    padding: 30px;
+    width: 70%;
     text-align: center;
+  }
+
+
+  .negociacao-text:hover{
+    background-color: rgb(230, 230, 246);
   }
 }
 
@@ -218,27 +253,77 @@ body {
   align-items: center;
   text-align: center;
   justify-content: center;
-  padding: 30px;
+  background-color: rgb(243, 237, 237);
+  padding-bottom: 200px;
+
+
 
   .bolsas {
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
+    padding: 30px;
   }
 
   .bolsas-text {
-    border: 1px solid green;
     margin: 10px;
     width: 30%;
     height: 45vh;
-    padding: 30px;
+    padding: 60px;
   }
 
   .bolsa-container {
     width: 60%;
     margin: auto;
-    margin-top: 40px;
     margin-bottom: 40px;
+    color: rgb(28, 63, 158);
+    padding-top: 60px;
   }
+}
+
+
+ a{
+  text-decoration: none;
+  color: white;
+
+ }
+.btn{
+  background-color: rgb(28, 63, 158);
+  padding: 10px;
+  color: white;
+  border-radius: 7px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+
+  &:hover{
+    background-color: rgb(37, 82, 206);
+  }
+}
+
+.b3{
+  background-color: rgb(243, 237, 237);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 30px;
+  padding-top: 100px;
+
+
+  .b3-text{
+    width: 40%;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    margin-left: 50px;
+   
+
+  }
+}
+
+h2, h3{
+  color: rgb(28, 63, 158);
 }
