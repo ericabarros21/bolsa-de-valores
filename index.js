@@ -150,10 +150,17 @@ submitBtn.addEventListener('click',() => {  //Quando o botão de envio é clicad
         currentQuiz++
         if(currentQuiz < quizData.length) {
             loadQuiz()
-        } else{
-            quiz.innerHTML = ` <h2> Parabens! Você acertou ${score}/${quizData.length} questões </h2>
+        } else{  
+            if(score <= 5) {
+            quiz.innerHTML = ` <h2>Você acertou ${score}/${quizData.length} questões. Você precisa estudar mais! </h2>
             
             <button class ="btn" onclick= "location.reload()"> Fazer novamente</button> `
-        }
+
+            }  else{
+                quiz.innerHTML =  ` <h2>Parabéns! Você acertou ${score}/${quizData.length} questões.</h2>
+                
+                <button class ="btn" onclick= "location.reload()"> Fazer novamente</button> `
+            }
+        } 
     }
 })
