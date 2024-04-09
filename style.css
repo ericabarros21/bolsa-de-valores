@@ -274,4 +274,57 @@ a {
 
 h2, h3 {
   color: rgb(28, 63, 158);
+}
+
+.intro {
+  background-color: rgb(243, 237, 237);
+  margin: auto;
+  width: 60%;
+  padding: 70px;
+  text-align: justify;
+}
+.intro h1 {
+  margin-bottom: 30px;
+}
+.intro p {
+  margin-bottom: 20px;
+}
+.intro button {
+  margin-bottom: 30px;
+}
+
+.teste {
+  background-color: rgb(243, 237, 237);
+  margin: auto;
+  width: 60%;
+  padding: 70px;
+  text-align: justify;
+}
+
+.quiz-container {
+  background-color: rgb(243, 237, 237);
+  margin: auto;
+  width: 80%;
+  padding: 70px;
+  text-align: justify;
+}
+.quiz-container h2 {
+  margin-bottom: 30px;
+}
+.quiz-container li {
+  margin-bottom: 15px;
+  list-style: none;
+}
+
+.btn-proxima {
+  background-color: rgb(28, 63, 158);
+  padding: 10px;
+  color: white;
+  border-radius: 7px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.btn-proxima:hover {
+  background-color: rgb(37, 82, 206);
 }/*# sourceMappingURL=style.css.map */

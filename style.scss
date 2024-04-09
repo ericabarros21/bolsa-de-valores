@@ -288,7 +288,7 @@ body {
   color: white;
 
  }
-.btn{
+.btn {
   background-color: rgb(28, 63, 158);
   padding: 10px;
   color: white;
@@ -327,3 +327,75 @@ body {
 h2, h3{
   color: rgb(28, 63, 158);
 }
+
+
+// style introdução teste de aptidão
+ .intro{
+  background-color: rgb(243, 237, 237);
+  margin: auto;
+  width: 60%;
+  padding: 70px;
+  text-align: justify;
+
+   h1{
+    margin-bottom: 30px;
+   }
+
+   p{
+    margin-bottom: 20px;
+   }
+
+   button{
+    margin-bottom: 30px;
+   }
+ }
+
+
+ //estyle teste de aptidão
+
+ .teste{
+  background-color: rgb(243, 237, 237);
+  margin: auto;
+  width: 60%;
+  padding: 70px;
+  text-align: justify;
+ }
+
+
+  .quiz-container{
+    background-color: rgb(243, 237, 237);
+    margin: auto;
+    width: 80%;
+    padding: 70px;
+    text-align: justify;
+
+    h2{
+      margin-bottom: 30px;
+    }
+
+    li{
+      margin-bottom: 15px;
+      list-style: none;
+    
+
+    }
+
+  }
+
+
+    .btn-proxima {
+      background-color: rgb(28, 63, 158);
+      padding: 10px;
+      color: white;
+      border-radius: 7px;
+      border: none;
+      margin-top: 20px;
+      cursor: pointer;
+    
+      &:hover{
+        background-color: rgb(37, 82, 206);
+      }
+    }
+
+
+ 
