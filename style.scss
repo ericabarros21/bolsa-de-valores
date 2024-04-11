@@ -249,38 +249,77 @@ body {
   }
 }
 
-.conatiner-bolsa {
+.bolsa-container {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 40px;
+  color: rgb(28, 63, 158);
+  padding-top: 60px;
+  
+}
+
+.container-bolsa {
   align-items: center;
   text-align: center;
   justify-content: center;
-  background-color: rgb(243, 237, 237);
-  padding-bottom: 200px;
+  padding-bottom: 50px;
+
+
+}
+
 
 
 
   .bolsas {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    padding: 30px;
+   
   }
 
   .bolsas-text {
-    margin: 10px;
+    margin: 20px;
     width: 30%;
-    height: 45vh;
-    padding: 60px;
+    height: 35vh;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+
   }
 
-  .bolsa-container {
-    width: 60%;
-    margin: auto;
-    margin-bottom: 40px;
-    color: rgb(28, 63, 158);
-    padding-top: 60px;
+ 
+.um {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+
+  p{
+    margin-top: 20px;
+  }
+
+  h1{
+    margin-bottom: 10px;
+  }
+
+
+   
+  }
+
+.dois{
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  p{
+    margin-top: 20px;
+   }
+
+   h1{
+    margin-bottom: 10px;
   }
 }
+
 
 
  a{
@@ -398,4 +437,261 @@ h2, h3{
     }
 
 
- 
+/* Estilos para telas menores ou iguais a 400px de largura */
+@media (max-width: 500px){
+
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Sora", sans-serif;
+    font-size: 12px;
+    
+  } 
+
+  main{
+    width: 100vw;
+  }
+  
+
+  
+  
+  body {
+    background-color: rgb(255, 255, 255);
+  
+  }
+  
+  
+  .header {
+    background-image: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url(./img/fundo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 150vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 30px;
+  
+    .header-txt {
+      height: 30vh;
+      width: 300px;
+      align-items: center;
+      text-align: center;
+      margin: auto;
+
+     
+    }
+  
+    .header-txt p {
+      font-size: 16px;
+      border-left: 5px solid rgb(255, 255, 255);
+      padding: 10px;
+  
+    }
+  
+    .btn-1 {
+      background-color: rgb(28, 63, 158);
+    padding: 10px;
+    color: white;
+    border-radius: 7px;
+    border: none;
+    margin: 8px;
+    cursor: pointer;
+    margin-left: 15px;
+  
+    &:hover{
+      background-color: rgb(37, 82, 206);
+    }
+  
+    }
+  }
+  
+  
+  .h1 {
+    background-color: rgb(184, 179, 179);
+  }
+
+  .historia {
+    background-color: rgb(243, 237, 237);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  
+    .historia-text {
+      padding: 20px;
+      color: black;
+      text-align: justify;
+    }
+    .historia-img img{
+      width: 300px;
+      margin: auto;
+      justify-content: center;
+      margin-left: 15px;
+    }
+  }
+
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .main-2 {
+    flex-basis: 100%;
+    padding: 20px;
+    margin: 10px;
+    font-size: 18px;
+    background-color: rgb(184, 179, 179);
+  }
+
+  .main-2 h2 {
+    margin-bottom: 20px;
+  }
+
+
+  .negociacao {
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url(./img/fundo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    height: 300vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  
+    .negociacao-um {
+      width: 80%;
+      padding: 10px;
+      margin: 0;
+      top: 0;
+      color: white;
+      text-align: justify;
+    }
+  
+    .negociacao-text-um {
+     
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+  
+      margin: auto;
+   
+    }
+  
+    .negociacao-text {
+      margin: 10px;
+      background-color: rgb(184, 179, 179);
+      border: 1px solid black;
+      border-radius: 25px;
+      height: 50vh;
+      padding: 10px;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+  
+  
+    .negociacao-text:hover{
+      background-color: rgb(230, 230, 246);
+    }
+  }
+
+
+  .bolsa-container{
+    font-size: 10px;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    text-align: justify;
+    margin-top: 50px;
+  }
+
+  .bolsas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .um{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dois{
+    display: flex;
+    flex-direction: column;
+  }
+  .bolsas-text {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+
+  .bolsas-text h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .bolsas-text p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+
+
+  .b3 {
+    flex-direction: column;
+    margin: 0;
+    text-align: justify;
+    padding: 10px;
+  
+
+  }
+
+  .b3 img {
+    width: 200px; /* Reduzindo o tamanho da imagem para telas menores */
+  }
+
+  .b3 .b3-text {
+    margin: 0;
+    padding: 50px;
+    width: 100%;
+    text-align: justify;
+
+  
+  }
+
+  .b3-text p {
+    font-size: 12px; /* Reduzindo o tamanho do texto */
+    margin-bottom: 10px;
+    margin: 0;
+    padding: 0;
+
+  }
+
+
+}
+
+
+  
+
+
+
