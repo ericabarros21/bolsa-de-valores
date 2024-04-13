@@ -7,6 +7,8 @@
 body {
   background-color: rgb(255, 255, 255);
   padding: 100px 150px;
+  margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -353,7 +355,7 @@ h2, h3 {
 }
 
 /* Estilos para telas menores ou iguais a 400px de largura */
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   * {
     margin: 0;
     padding: 0;
@@ -362,28 +364,37 @@ h2, h3 {
   }
   main {
     width: 100vw;
+    margin: 0;
+    padding: 0;
+    border: 0;
   }
   body {
     background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
   }
   .header {
     background-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0.7)), url(./img/fundo.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 150vh;
+    height: 80vh;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 30px;
   }
+  .header h1 {
+    font-size: 20px;
+  }
   .header .header-txt {
     height: 30vh;
     width: 300px;
     align-items: center;
-    text-align: center;
+    text-align: justify;
     margin: auto;
+    margin-top: 15px;
   }
   .header .header-txt p {
     font-size: 16px;
@@ -405,6 +416,9 @@ h2, h3 {
   }
   .h1 {
     background-color: rgb(184, 179, 179);
+    font-size: 30px;
+    text-align: center;
+    color: rgb(37, 82, 206);
   }
   .historia {
     background-color: rgb(243, 237, 237);
@@ -443,7 +457,7 @@ h2, h3 {
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
-    height: 300vh;
+    height: 180vh;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -452,7 +466,7 @@ h2, h3 {
     width: 80%;
     padding: 10px;
     margin: 0;
-    top: 0;
+    margin-bottom: 80px;
     color: white;
     text-align: justify;
   }
@@ -476,14 +490,12 @@ h2, h3 {
   .negociacao .negociacao-text:hover {
     background-color: rgb(230, 230, 246);
   }
-  .bolsa-container {
-    font-size: 10px;
-    margin: 0;
-    padding: 15px;
+  .bolsa-container h1 {
+    padding: 0;
     text-align: center;
-    width: 100%;
-    text-align: justify;
-    margin-top: 50px;
+    align-items: center;
+    width: 100vw;
+    margin: 0;
   }
   .bolsas {
     display: flex;
@@ -513,17 +525,13 @@ h2, h3 {
     margin-bottom: 10px;
   }
   .btn {
-    padding: 10px 20px;
+    padding: 10px 10px;
     font-size: 14px;
   }
   .b3 {
     flex-direction: column;
     margin: 0;
-    text-align: justify;
     padding: 10px;
-  }
-  .b3 img {
-    width: 200px; /* Reduzindo o tamanho da imagem para telas menores */
   }
   .b3 .b3-text {
     margin: 0;
