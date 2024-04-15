@@ -16,7 +16,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   color: white;
   display: flex;
   flex-direction: column;
@@ -178,7 +178,7 @@ body {
   display: flex;
   align-items: center;
   padding: 10px;
-  height: 120vh;
+  height: 135vh;
 }
 .negociacao .negociacao-um {
   width: 30%;
@@ -291,7 +291,7 @@ a {
 }
 .b3 .b3-text {
   width: 40%;
-  text-align: center;
+  text-align: justify;
   padding: 20px;
   margin: 20px;
   margin-left: 50px;
@@ -354,8 +354,54 @@ h2, h3 {
   background-color: rgb(37, 82, 206);
 }
 
-/* Estilos para telas menores ou iguais a 400px de largura */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1800px) {
+  .negociacao {
+    background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.7)), url(./img/fundo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .negociacao .negociacao-um {
+    width: 60%;
+    padding: 10px;
+    padding-top: 50px;
+    margin: 0;
+    margin-bottom: 30px;
+    color: white;
+    text-align: justify;
+  }
+  .negociacao .negociacao-text-um {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+  }
+  .negociacao .negociacao-text {
+    margin: 10px;
+    background-color: rgb(184, 179, 179);
+    border: 1px solid black;
+    border-radius: 25px;
+    height: 55vh;
+    width: 200px;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+  .negociacao .negociacao-text h3 {
+    text-align: center;
+  }
+  .negociacao .negociacao-text:hover {
+    background-color: rgb(230, 230, 246);
+  }
+  .dois {
+    margin-top: 150px;
+  }
+}
+@media screen and (max-width: 1000px) {
   * {
     margin: 0;
     padding: 0;
@@ -378,7 +424,165 @@ h2, h3 {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 80vh;
+    height: 40vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 30px;
+  }
+  .header h1 {
+    font-size: 20px;
+  }
+  .header .header-txt {
+    height: 30vh;
+    width: 600px;
+    align-items: center;
+    text-align: justify;
+    margin: auto;
+    margin-top: 15px;
+  }
+  .header .header-txt p {
+    font-size: 16px;
+    border-left: 5px solid rgb(255, 255, 255);
+    padding: 10px;
+  }
+  .header .btn-1 {
+    background-color: rgb(28, 63, 158);
+    padding: 10px;
+    color: white;
+    border-radius: 7px;
+    border: none;
+    margin: 8px;
+    cursor: pointer;
+    margin-left: 15px;
+  }
+  .header .btn-1:hover {
+    background-color: rgb(37, 82, 206);
+  }
+  .historia {
+    background-color: rgb(243, 237, 237);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .historia .historia-text {
+    padding: 20px;
+    color: black;
+    text-align: justify;
+  }
+  .historia .historia-img img {
+    width: 300px;
+    margin: auto;
+    margin-left: 25%;
+  }
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .main-2 {
+    flex-basis: 100%;
+    padding: 20px;
+    margin: 10px;
+    font-size: 18px;
+    background-color: rgb(184, 179, 179);
+  }
+  .main-2 h2 {
+    margin-bottom: 20px;
+  }
+  .negociacao {
+    background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.7)), url(./img/fundo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .negociacao .negociacao-um {
+    width: 80%;
+    padding: 10px;
+    padding-top: 50px;
+    margin: 0;
+    margin-bottom: 30px;
+    color: white;
+    text-align: justify;
+  }
+  .negociacao .negociacao-text-um {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .negociacao .negociacao-text {
+    margin: 10px;
+    background-color: rgb(184, 179, 179);
+    border: 1px solid black;
+    border-radius: 25px;
+    height: 50vh;
+    width: 100%;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+  .negociacao .negociacao-text h3 {
+    text-align: center;
+  }
+  .negociacao .negociacao-text:hover {
+    background-color: rgb(230, 230, 246);
+  }
+  .negociacao .btn {
+    width: 200px;
+    margin-top: 15px;
+  }
+  .b3 {
+    flex-direction: column;
+    margin: 0;
+    padding: 10px;
+  }
+  .b3 .b3-text {
+    margin: 0;
+    padding: 50px;
+    width: 100%;
+    text-align: justify;
+  }
+  .b3-text p {
+    font-size: 12px; /* Reduzindo o tamanho do texto */
+    margin-bottom: 10px;
+    margin: 0;
+    padding: 0;
+  }
+  .b3-text .btn {
+    width: 200px;
+    margin-top: 15px;
+  }
+}
+/* Estilos para telas menores ou iguais a 400px de largura */
+@media screen and (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Sora", sans-serif;
+    font-size: 12px;
+  }
+  main {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+  }
+  .header {
+    background-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0.7)), url(./img/fundo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 95vh;
     color: white;
     display: flex;
     flex-direction: column;
@@ -457,7 +661,7 @@ h2, h3 {
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
-    height: 180vh;
+    height: 220vh;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -465,7 +669,7 @@ h2, h3 {
   .negociacao .negociacao-um {
     width: 80%;
     padding: 10px;
-    margin: 0;
+    margin-bottom: 10px;
     margin-bottom: 80px;
     color: white;
     text-align: justify;
@@ -474,24 +678,32 @@ h2, h3 {
     align-items: center;
     text-align: center;
     justify-content: center;
+    display: flex;
+    flex-direction: column;
     margin: auto;
   }
   .negociacao .negociacao-text {
-    margin: 10px;
     background-color: rgb(184, 179, 179);
     border: 1px solid black;
     border-radius: 25px;
-    height: 50vh;
-    padding: 10px;
-    width: 100%;
+    height: 25vh;
+    margin: 10px;
+    width: 250px;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+  .negociacao .negociacao-text h3 {
     text-align: center;
-    margin-bottom: 50px;
   }
   .negociacao .negociacao-text:hover {
     background-color: rgb(230, 230, 246);
   }
+  .negociacao .btn {
+    width: 200px;
+    margin-top: 15px;
+  }
   .bolsa-container h1 {
-    padding: 0;
+    padding: 20px;
     text-align: center;
     align-items: center;
     width: 100vw;
@@ -511,7 +723,7 @@ h2, h3 {
     display: flex;
     flex-direction: column;
   }
-  .bolsas-text {
+  .bolsas .bolsas-text {
     width: 100%;
     padding: 20px;
     margin-bottom: 10px;
@@ -527,6 +739,8 @@ h2, h3 {
   .btn {
     padding: 10px 10px;
     font-size: 14px;
+    width: 100px;
+    margin: auto;
   }
   .b3 {
     flex-direction: column;
@@ -544,5 +758,9 @@ h2, h3 {
     margin-bottom: 10px;
     margin: 0;
     padding: 0;
+  }
+  .b3-text .btn {
+    width: 200px;
+    margin-top: 15px;
   }
 }/*# sourceMappingURL=style.css.map */
