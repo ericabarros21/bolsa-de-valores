@@ -789,10 +789,9 @@ h2, h3 {
     width: auto;
   }
   .quiz-container {
-    width: 200px;
-    margin-top: 15px;
+    width: 100%;
   }
-  .quiz-container button {
+  #submit {
     font-size: 12px;
     padding: 5px;
   }
