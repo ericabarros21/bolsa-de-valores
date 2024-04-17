@@ -129,6 +129,7 @@ body {
   border-radius: 12px;
   top: 20px;
   transition: 0.5s;
+  cursor: pointer;
 }
 .grafico-container .grafico-img img {
   position: absolute;
@@ -139,6 +140,7 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 12px;
+  cursor: pointer;
 }
 .grafico-container .grafico-text {
   position: absolute;

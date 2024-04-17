@@ -4,6 +4,7 @@
   font-family: "Sora", sans-serif;
 }
 
+/////
 
 
 body {
@@ -153,6 +154,7 @@ body {
     border-radius: 12px;
     top: 20px;
     transition: 0.5s;
+    cursor: pointer;
   }
 
   .grafico-img img {
@@ -163,6 +165,7 @@ body {
     height: 100%;
     object-fit: cover;
     border-radius: 12px;
+    cursor: pointer;
   }
 
   .grafico-text {
