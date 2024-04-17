@@ -376,6 +376,7 @@ h2, h3{
  .intro{
   background-color: rgb(243, 237, 237);
   margin: auto;
+  margin-top: 40px;
   width: 60%;
   padding: 70px;
   text-align: justify;
@@ -408,6 +409,7 @@ h2, h3{
   .quiz-container{
     background-color: rgb(243, 237, 237);
     margin: auto;
+    margin-top: 40px;
     width: 80%;
     padding: 70px;
     text-align: justify;
@@ -508,6 +510,10 @@ h2, h3{
       
        .nyse{
         margin-top: 70px;
+       }
+
+       .intro{
+        margin: 50px auto;
        }
     }
 
@@ -749,6 +755,10 @@ h2, h3{
 
       .nyse{
         margin-top: 31px;
+      }
+
+      .intro{
+        margin-top:40px;
       }
     
     
@@ -1042,6 +1052,22 @@ h2, h3{
   .b3-text .btn{
     width: 200px;
     margin-top: 15px;
+  }
+  .intro{
+    padding: 30px;
+    width: auto;
+  }
+
+  
+
+  .quiz-container{
+    width: 200px;
+    margin-top: 15px;
+
+    button{
+      font-size: 12px;
+      padding: 5px;
+    }
   }
 
 
