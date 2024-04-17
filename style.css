@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   font-family: "Sora", sans-serif;
+  position: static;
+  box-sizing: border-box;
 }
 
 body {
@@ -16,19 +18,21 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-size: 30px;
   padding: 30px;
+  padding-bottom: 100px;
 }
 .header .header-txt {
-  width: 800px;
+  width: 900px;
   margin-bottom: 20px;
   padding: 30px;
   margin: auto;
+  padding-bottom: 30px;
 }
 .header .header-txt p {
   font-size: 16px;
@@ -241,9 +245,6 @@ body {
 .um p {
   margin-top: 20px;
 }
-.um h1 {
-  margin-bottom: 10px;
-}
 
 .dois {
   display: flex;
@@ -391,7 +392,7 @@ h2, h3 {
     background-color: rgb(184, 179, 179);
     border: 1px solid black;
     border-radius: 25px;
-    height: 50vh;
+    height: 70vh;
     width: 200px;
     text-align: justify;
     margin-bottom: 20px;
@@ -403,14 +404,16 @@ h2, h3 {
   .negociacao .negociacao-text:hover {
     background-color: rgb(230, 230, 246);
   }
-  .dois {
-    margin-top: 150px;
-  }
-  .nyse {
-    margin-top: 70px;
+  .bolsas-text {
+    margin: 80px 30px;
+    width: 100%;
   }
   .intro {
     margin: 50px auto;
+  }
+  .b3-text {
+    width: 60%;
+    margin: 0;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -549,6 +552,9 @@ h2, h3 {
     width: 200px;
     margin-top: 15px;
   }
+  .bolsas-text {
+    width: 100%;
+  }
   .um .bolsas-text {
     padding-bottom: 0;
     margin-bottom: 0;
@@ -609,24 +615,20 @@ h2, h3 {
     background-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0.7)), url(./img/fundo.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    height: 95vh;
+    height: 90vh;
+    padding: 0;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 30px;
   }
   .header h1 {
     font-size: 20px;
   }
   .header .header-txt {
-    height: 95vh;
-    width: 300px;
-    align-items: center;
-    text-align: justify;
-    margin: auto;
     margin-top: 15px;
+    padding: 0;
+    width: 350px;
   }
   .header .header-txt p {
     font-size: 16px;
@@ -692,7 +694,7 @@ h2, h3 {
     display: flex;
     flex-direction: column;
     margin: 0;
-    min-height: 180vh;
+    min-height: 220vh;
     padding-bottom: 80px;
   }
   .negociacao .negociacao-um {
@@ -736,16 +738,17 @@ h2, h3 {
   .um {
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
   }
   .dois {
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
+    margin-top: 30px;
   }
   .bolsas .bolsas-text {
     width: 100%;
     padding: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 100px;
   }
   .bolsas-text h1 {
     font-size: 20px;
