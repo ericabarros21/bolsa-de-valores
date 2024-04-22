@@ -52,10 +52,7 @@ main{
     height: 200px;
     margin: 30px;
     border-radius: 15px;
-    
-   
-   
-  
+  }}
     
     .card-conteudo{
       padding: 20px;
@@ -64,6 +61,7 @@ main{
       align-items: center;
        text-align: center;
        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
        
   
        &:hover{
@@ -73,18 +71,26 @@ main{
       h2{
         color: rgb(49, 87, 182);
       }
-  
-       }
+      p{
+        margin-top: 20px;
+      }
     
+    }}
+
+    .card-conteudo h2{
+      margin-bottom: 20px;
     }
   
   
-    p{
-      margin-top: 20px;
-    }
+ 
   
-  }
-}
+      
+
+  
+  
+
+
+  
 
 .teste{
   display: flex;
@@ -110,11 +116,12 @@ main{
         padding: 0 200px;
     
   }
+}
   .teste .grafico {
   position: relative;
   width: 300px;
   height: 300px;
-  background: rgb(49, 54, 79);
+  background-color: rgba(64, 111, 230, 0.616);
   box-shadow: 0 35px 80px rgba(0, 0, 0, .15);
   transition: .5s;
   justify-content: center;
@@ -123,8 +130,9 @@ main{
   
   .teste .grafico:hover{
   height: 715px;
-  width: 400px;
+  width: 300px;
   border-radius: 20px;
+  background-color: rgb(34, 62, 133);
   }
   
   .teste .grafico .grafico-img{
@@ -176,6 +184,11 @@ main{
   color: rgb(230, 230, 246);
   margin-top: -10px;
   text-align: center;
+  color: rgb(16, 38, 126);
+  }
+
+  .teste .grafico .grafico-text:hover h3{
+    color: white;
   }
   
   .teste .grafico .grafico-text p {
@@ -400,6 +413,11 @@ button{
         list-style: none;
       }
     }
+
+    .resposta{
+      width: 50%;
+      text-align: justify;
+    }
   
   
     @media screen and (max-width: 768px){
@@ -410,12 +428,14 @@ button{
    
      .container-card .card-conteudo{
         height: 280px;
-
-        .card{
-          margin: 50px 15px;
-        }
+        
        
       }
+
+      .container-card .card{
+      margin: 60px 15px;
+      }
+
 
     .container-finalizacao{
       display: flex;
@@ -434,8 +454,21 @@ button{
       height: 50vh;
     }
     }
+
+    .grafico-container{
+      .grafico-intro{
+        padding: 0;
+        margin: 0;
+
+
+      }
+    }
+
+    .resposta{
+      width: 100%;
+    }
   }
-}
+
   
     
       

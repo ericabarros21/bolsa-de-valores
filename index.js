@@ -152,12 +152,20 @@ submitBtn.addEventListener('click',() => {  //Quando o botão de envio é clicad
             loadQuiz()
         } else{  
             if(score <= 5) {
-            quiz.innerHTML = ` <h2>Você acertou ${score}/${quizData.length} questões. Você precisa estudar mais! </h2>
+            quiz.innerHTML = ` <h2 class="resposta">Você acertou ${score}/${quizData.length} questões. Você precisa estudar mais! Mas quero encorajá-lo(a) a não se desmotivar por esse resultado, mas sim a usar essa experiência como uma chance de identificar áreas de melhoria e desenvolvimento. Lembre-se de que você possui habilidades e potencial incríveis, e estou confiante de que podemos trabalhar juntos para alcançar seus objetivos.   </h2>
             
             <button class ="btn" onclick= "location.reload()"> Fazer novamente</button> `
 
-            }  else{
-                quiz.innerHTML =  ` <h2>Parabéns! Você acertou ${score}/${quizData.length} questões.</h2>
+        
+            } else if(score <=9){
+                quiz.innerHTML =  ` <h2 class="resposta"> Você acertou ${score}/${quizData.length} questões. Gostaria de parabenizá-lo(a) pelo seu desempenho no teste. Sua pontuação mediana mostra um esforço consistente e um entendimento razoável do conteúdo. Continue praticando e buscando melhorar ainda mais. </h2>
+                
+                <button class ="btn" onclick= "location.reload()"> Fazer novamente</button> `
+
+            }
+            
+            else{
+                quiz.innerHTML =  ` <h2 class="resposta"> Você acertou ${score}/${quizData.length} questões. Parabéns pela excelente pontuação no teste! Seu desempenho foi impressionante. Continue assim buscando sempre o melhor em tudo o que faz! </h2>
                 
                 <button class ="btn" onclick= "location.reload()"> Fazer novamente</button> `
             }

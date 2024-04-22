@@ -43,14 +43,14 @@ main {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
-.card {
+.container-card .card {
   width: 500px;
   height: 200px;
   margin: 30px;
   border-radius: 15px;
 }
-.card .card-conteudo {
+
+.card-conteudo {
   padding: 20px;
   height: 200px;
   background-color: rgb(236, 237, 244);
@@ -58,15 +58,19 @@ main {
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.card .card-conteudo:hover {
+.card-conteudo:hover {
   transform: scale(1.05);
   box-shadow: 0 0 20px rgb(176, 178, 194);
 }
-.card .card-conteudo:hover h2 {
+.card-conteudo:hover h2 {
   color: rgb(49, 87, 182);
 }
-.card p {
+.card-conteudo:hover p {
   margin-top: 20px;
+}
+
+.card-conteudo h2 {
+  margin-bottom: 20px;
 }
 
 .teste {
@@ -90,22 +94,26 @@ main {
   margin: auto;
   padding: 0 200px;
 }
-.grafico-container .teste .grafico {
+
+.teste .grafico {
   position: relative;
   width: 300px;
   height: 300px;
-  background: rgb(49, 54, 79);
+  background-color: rgba(64, 111, 230, 0.616);
   box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
   transition: 0.5s;
   justify-content: center;
   display: flex;
 }
-.grafico-container .teste .grafico:hover {
+
+.teste .grafico:hover {
   height: 715px;
-  width: 400px;
+  width: 300px;
   border-radius: 20px;
+  background-color: rgb(34, 62, 133);
 }
-.grafico-container .teste .grafico .grafico-img {
+
+.teste .grafico .grafico-img {
   position: absolute;
   width: 200px;
   height: 150px;
@@ -113,7 +121,8 @@ main {
   top: 20px;
   transition: 0.5s;
 }
-.grafico-container .teste .grafico .grafico-img img {
+
+.teste .grafico .grafico-img img {
   position: absolute;
   top: 0;
   left: 0;
@@ -123,7 +132,8 @@ main {
      object-fit: cover;
   border-radius: 12px;
 }
-.grafico-container .teste .grafico .grafico-text {
+
+.teste .grafico .grafico-text {
   position: absolute;
   top: 200px;
   width: 100%;
@@ -131,31 +141,41 @@ main {
   overflow: hidden;
   text-align: center;
 }
-.grafico-container .teste .grafico:hover .grafico-text {
+
+.teste .grafico:hover .grafico-text {
   top: 100px;
   height: 715px;
   text-align: justify;
   padding: 3px;
 }
-.grafico-container .teste .grafico:hover .grafico-img {
+
+.teste .grafico:hover .grafico-img {
   top: -100px;
   scale: 0.75;
   box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
 }
-.grafico-container .teste .grafico .grafico-text h3 {
+
+.teste .grafico .grafico-text h3 {
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 3rem;
   color: rgb(230, 230, 246);
   margin-top: -10px;
   text-align: center;
+  color: rgb(16, 38, 126);
 }
-.grafico-container .teste .grafico .grafico-text p {
+
+.teste .grafico .grafico-text:hover h3 {
+  color: white;
+}
+
+.teste .grafico .grafico-text p {
   color: rgb(236, 237, 244);
   padding: 0 20px;
   margin: 10px 15px 5px 15px;
 }
-.grafico-container .container-finalizacao {
+
+.container-finalizacao {
   width: 100%;
   text-align: justify;
   margin: auto;
@@ -165,20 +185,21 @@ main {
   display: flex;
   flex-direction: column;
 }
-.grafico-container .container-finalizacao .finalizacao {
+.container-finalizacao .finalizacao {
   padding: 30px;
   width: 70%;
 }
-.grafico-container .container-finalizacao .finalizacao p {
+.container-finalizacao .finalizacao p {
   margin-bottom: 16px;
 }
-.grafico-container .container-teste {
+
+.container-teste {
   height: 35vh; /* 50% da altura da tela */
   margin: 5%; /* 5% da largura da tela em cada margem */
   border-radius: 10px;
   align-items: center;
 }
-.grafico-container .container-teste .teste-intro {
+.container-teste .teste-intro {
   height: 100%;
   background-color: rgb(236, 237, 244);
   padding: 5%; /* 5% da largura da tela */
@@ -186,17 +207,20 @@ main {
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.grafico-container .container-teste .teste-intro:hover {
+.container-teste .teste-intro:hover {
   transform: scale(1.05);
   box-shadow: 0 0 20px rgb(176, 178, 194);
 }
-.grafico-container h3 {
+
+h3 {
   margin-bottom: 20px;
 }
-.grafico-container h4 {
+
+h4 {
   margin-bottom: 15px;
 }
-.grafico-container button {
+
+button {
   background-color: rgb(49, 87, 182);
   width: 140px;
   height: 35px;
@@ -206,15 +230,16 @@ main {
   cursor: pointer;
   color: white;
 }
-.grafico-container button:hover {
+button:hover {
   background-color: rgb(64, 111, 230);
 }
-.grafico-container button a {
+button a {
   text-decoration: none;
   align-items: center;
   color: white;
 }
-.grafico-container .container-text {
+
+.container-text {
   display: flex;
   width: 30%;
   height: 40vh;
@@ -222,36 +247,38 @@ main {
   margin-top: 100px;
   color: white;
 }
-.grafico-container .container-text h3 {
+.container-text h3 {
   margin-bottom: 30px;
 }
-.grafico-container .container-text h4 {
+.container-text h4 {
   margin-bottom: 10px;
 }
-.grafico-container .container-text button {
+.container-text button {
   margin-top: 30px;
   border: none;
   width: 200px;
   height: 40px;
 }
-.grafico-container .container-text a {
+.container-text a {
   text-decoration: none;
   padding: 20px;
   color: black;
 }
-.grafico-container footer {
+
+footer {
   width: 100%;
   bottom: 0;
   margin: 0;
   padding: 30px 50px;
   background-color: rgb(49, 87, 182);
 }
-.grafico-container footer h3 {
+footer h3 {
   text-align: center;
   padding-bottom: 30px;
   color: black;
 }
-.grafico-container .footer {
+
+.footer {
   width: 100%;
   bottom: 0;
   margin: 0;
@@ -259,28 +286,30 @@ main {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.grafico-container .footer .resumo-text {
+.footer .resumo-text {
   width: 800px;
   margin: 20px;
 }
-.grafico-container .footer .resumo-text h3 {
+.footer .resumo-text h3 {
   text-align: justify;
 }
-.grafico-container .footer .resumo-conteudo {
+.footer .resumo-conteudo {
   width: 100%;
   background-color: rgb(49, 87, 182);
 }
-.grafico-container .intro {
+
+.intro {
   background-color: rgb(236, 237, 244);
   padding: 30px;
 }
-.grafico-container .intro .intro-text p, .grafico-container .intro .intro-text h1 {
+.intro .intro-text p, .intro .intro-text h1 {
   margin: 15px 0;
 }
-.grafico-container .intro .intro-text button {
+.intro .intro-text button {
   margin-top: 15px;
 }
-.grafico-container .quiz-container {
+
+.quiz-container {
   background-color: rgb(236, 237, 244);
   padding: 30px;
   margin: auto;
@@ -289,34 +318,47 @@ main {
   flex-direction: column;
   justify-content: center;
 }
-.grafico-container .quiz-container h2, .grafico-container .quiz-container input {
+.quiz-container h2, .quiz-container input {
   margin: 10px 0;
 }
-.grafico-container .quiz-container ul {
+.quiz-container ul {
   list-style: none;
 }
+
+.resposta {
+  width: 50%;
+  text-align: justify;
+}
+
 @media screen and (max-width: 768px) {
-  .grafico-container .container-intro .intro-container {
+  .container-intro .intro-container {
     margin: 0;
     padding: 10px;
   }
-  .grafico-container .container-card .card-conteudo {
+  .container-card .card-conteudo {
     height: 280px;
   }
-  .grafico-container .container-card .card-conteudo .card {
-    margin: 50px 15px;
+  .container-card .card {
+    margin: 60px 15px;
   }
-  .grafico-container .container-finalizacao {
+  .container-finalizacao {
     display: flex;
     flex-direction: column;
     padding: 10px;
   }
-  .grafico-container .container-finalizacao .finalizacao {
+  .container-finalizacao .finalizacao {
     margin: 0;
     padding: 5px;
     width: 100%;
   }
-  .grafico-container .container-finalizacao .container-teste {
+  .container-finalizacao .container-teste {
     height: 50vh;
+  }
+  .grafico-container .grafico-intro {
+    padding: 0;
+    margin: 0;
+  }
+  .resposta {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
